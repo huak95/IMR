@@ -1,0 +1,89 @@
+____________________________
+           Q-table
+           Front  Left  Right  Close
+F00000         0     0      0      0
+L00000         0     0      0      0
+R00000         0     0      0      0
+C00000         0     0      0      0
+F00001         0     0      0      0
+...          ...   ...    ...    ...
+C11110001      0     0      0      0
+F11110010      0     0      0      0
+L11110010      0     0      0      0
+R11110010      0     0      0      0
+C11110010      0     0      0      0
+
+[972 rows x 4 columns]
+____________________________
+ Traceback (most recent call last):
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\pandas\core\indexes\base.py", line 3361, in get_loc
+     return self._engine.get_loc(casted_key)
+   File "pandas\_libs\index.pyx", line 76, in pandas._libs.index.IndexEngine.get_loc
+   File "pandas\_libs\index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+   File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item    
+   File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item    
+ KeyError: 'R21201'
+
+ The above exception was the direct cause of the following 
+exception:
+
+ Traceback (most recent call last):
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\kivy\core\window\window_sdl2.py", line 256, in _event_filter
+     EventLoop.idle()
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\kivy\base.py", line 387, in idle
+     Clock.tick()
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\kivy\clock.py", line 733, in tick
+     self.post_idle(ts, self.idle())
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\kivy\clock.py", line 776, in post_idle
+     self._process_events()
+   File "kivy\_clock.pyx", line 616, in kivy._clock.CyClockBase._process_events
+   File "kivy\_clock.pyx", line 649, in kivy._clock.CyClockBase._process_events
+   File "kivy\_clock.pyx", line 645, in kivy._clock.CyClockBase._process_events
+   File "kivy\_clock.pyx", line 218, in kivy._clock.ClockEvent.tick
+   File "g:\My Drive\1.Study\4.CPE376 Intellegent Robot Programming\Assignment 6\PyRLSimbot\pysimbotlib\core\Simbot.py", line 122, in process
+     robot.update()
+   File "g:/My Drive/1.Study/4.CPE376 Intellegent Robot Programming/Assignment 6/PyRLSimbot/epsiode_stable_v3.py", line 193, in update
+     self.episode_loop()
+   File "g:/My Drive/1.Study/4.CPE376 Intellegent Robot Programming/Assignment 6/PyRLSimbot/epsiode_stable_v3.py", line 153, in episode_loop
+     self.maxQ = ( self.Q_table.loc[self.pre_state_key].max(axis=0))
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\pandas\core\indexing.py", line 931, in __getitem__     return self._getitem_axis(maybe_callable, axis=axis)
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\pandas\core\indexing.py", line 1164, in _getitem_axis
+     return self._get_label(key, axis=axis)
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\pandas\core\indexing.py", line 1113, in _get_label     return self.obj.xs(label, axis=axis)
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\pandas\core\generic.py", line 3776, in xs
+     loc = index.get_loc(key)
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\pandas\core\indexes\base.py", line 3363, in get_loc
+     raise KeyError(key) from err
+ KeyError: 'R21201'
+ Exception ignored in: 'kivy.core.window._window_sdl2._WindowSDL2Storage.cb_event_filter'
+ Traceback (most recent call last):
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\kivy\core\window\window_sdl2.py", line 256, in _event_filter
+     EventLoop.idle()
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\kivy\base.py", line 387, in idle
+     Clock.tick()
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\kivy\clock.py", line 733, in tick
+     self.post_idle(ts, self.idle())
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\kivy\clock.py", line 776, in post_idle
+     self._process_events()
+   File "kivy\_clock.pyx", line 616, in kivy._clock.CyClockBase._process_events
+   File "kivy\_clock.pyx", line 649, in kivy._clock.CyClockBase._process_events
+   File "kivy\_clock.pyx", line 645, in kivy._clock.CyClockBase._process_events
+   File "kivy\_clock.pyx", line 218, in kivy._clock.ClockEvent.tick
+   File "g:\My Drive\1.Study\4.CPE376 Intellegent Robot Programming\Assignment 6\PyRLSimbot\pysimbotlib\core\Simbot.py", line 122, in process
+     robot.update()
+   File "g:/My Drive/1.Study/4.CPE376 Intellegent Robot Programming/Assignment 6/PyRLSimbot/epsiode_stable_v3.py", line 193, in update
+     self.episode_loop()
+   File "g:/My Drive/1.Study/4.CPE376 Intellegent Robot Programming/Assignment 6/PyRLSimbot/epsiode_stable_v3.py", line 153, in episode_loop
+     self.maxQ = ( self.Q_table.loc[self.pre_state_key].max(axis=0))
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\pandas\core\indexing.py", line 931, in __getitem__     return self._getitem_axis(maybe_callable, axis=axis)  
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\pandas\core\indexing.py", line 1164, in _getitem_axis
+     return self._get_label(key, axis=axis)
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\pandas\core\indexing.py", line 1113, in _get_label     return self.obj.xs(label, axis=axis)
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\pandas\core\generic.py", line 3776, in xs
+     loc = index.get_loc(key)
+   File "C:\Users\huak9\miniconda3\envs\robot-env\lib\site-packages\pandas\core\indexes\base.py", line 3363, in get_loc
+     raise KeyError(key) from err
+ KeyError: 'R21201'
+[INFO   ] [Base        ] Leaving application in progress...
+(robot-env) G:\My Drive\1.Study\4.CPE376 Intellegent Robot 
+Programming\Assignment 6\PyRLSimbot>Q_value
