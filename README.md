@@ -1,6 +1,6 @@
-# PySimBot-extended
+# IMR - Intelligent Mobile Robot (Applied AI in mobile robotics)
 
-ได้เขียนโปรแกรม ในการควบคุมหุ่นยนต์ Mobile Robot ในด้าน AI and Machine Learning หลากหลายอย่าง เช่น Fuzzy, Genetics Algorithm, Artificial Life, Neural Networks, Reinforcement Learning, Naïve Bayes โดยจะมี Environment มาให้อยู่บนภาษา Python PySimbot (github.com)
+ได้เขียนโปรแกรม ในการควบคุมหุ่นยนต์ Mobile Robot ในด้าน AI and Machine Learning หลากหลายอย่าง เช่น Fuzzy, Genetics Algorithm, Artificial Life, Neural Networks, Reinforcement Learning, Naïve Bayes โดยจะมี Environment มาให้อยู่บนภาษา Python [PySimbot](https://github.com/jetstreamc/PySimbot)
 
 <div align="center">
   <img height="300" src="https://user-images.githubusercontent.com/38836072/163747471-84b29dc6-0433-4213-945c-08ae7984754e.png">
@@ -37,14 +37,15 @@
 3. No point-less spinning / turning
 4. Walk Forward
 
-Mutation Method : Dynamic mutation rate 1% at the beginning till 20 and increase to mild mutation function phase (21-30) and extreme mutation phase later 31-40 same method as the way I use to increase the number of mutation points.
+**Mutation Method**
+Dynamic mutation rate 1% at the beginning till 20 and increase to mild mutation function phase (21-30) and extreme mutation phase later 31-40 same method as the way I use to increase the number of mutation points.
 
-Robustness : after state 50 try to change the position of the objective. I found out that this method works perfectly (and better than the original version), even the mean dropped in the extreme mutation phase, it still gave us new best which couldn't get from cross, but after change the objective's position and the global best changed to the lower fitness but become more robust and more reliable on every objective position. But when increase more objective, the initial random effect impact on colony converged fitness also become much higher. 
+**Robustness**
+after state 50 try to change the position of the objective. I found out that this method works perfectly (and better than the original version), even the mean dropped in the extreme mutation phase, it still gave us new best which couldn't get from cross, but after change the objective's position and the global best changed to the lower fitness but become more robust and more reliable on every objective position. But when increase more objective, the initial random effect impact on colony converged fitness also become much higher. 
 
 
 <div align="center">
-  <img height="200" src="https://user-images.githubusercontent.com/38836072/163748365-a2690424-ff60-4823-b064-70c8ba3f004b.png">
-  
+  <img height="400" src="https://user-images.githubusercontent.com/38836072/163748365-a2690424-ff60-4823-b064-70c8ba3f004b.png">
   Learning Curve of GA Robot
 </div>
 
@@ -61,8 +62,7 @@ Robustness : after state 50 try to change the position of the objective. I found
 6.	ถ้าตั้งการ +/- ด้วยตรรกยะที่ซับซ้อนไป มันจะกลายเป็น ข้อจำกัดให้ colony ไม่ดีและ converge ยากในภายหลัง
 
 <div align="center">
-  <img height="200" src="https://user-images.githubusercontent.com/38836072/163748511-03e72749-b38e-4df4-a0e2-4dbdd27708e0.png">
-  
+  <img height="400" src="https://user-images.githubusercontent.com/38836072/163748511-03e72749-b38e-4df4-a0e2-4dbdd27708e0.png">
   กราฟการตายของ ALIFE Robot ที่ตายน้อยลง เพราะมีการเรียนรู้
 </div>
 
