@@ -70,3 +70,9 @@ after state 50 try to change the position of the objective. I found out that thi
   กราฟการตายของ ALIFE Robot ที่ตายน้อยลง เพราะมีการเรียนรู้
 </div>
 
+
+<!-- Contact-->
+## Contact
+Saksorn Ruangtanusak - [Linkedin](https://www.linkedin.com/in/saksorn/)
+
+Project Link: [https://github.com/huak95/IMR](https://github.com/huak95/IMR)
