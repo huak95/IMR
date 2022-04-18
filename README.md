@@ -1,4 +1,6 @@
-# IMR - Intelligent Mobile Robot (Applied AI in mobile robotics)
+# IMR - Intelligent Mobile Robot 
+
+To Applied AI in mobile robotics
 
 ได้เขียนโปรแกรม ในการควบคุมหุ่นยนต์ Mobile Robot ในด้าน AI and Machine Learning หลากหลายอย่าง เช่น Fuzzy, Genetics Algorithm, Artificial Life, Neural Networks, Reinforcement Learning, Naïve Bayes โดยจะมี Environment มาให้อยู่บนภาษา Python [PySimbot](https://github.com/jetstreamc/PySimbot)
 
@@ -16,7 +18,7 @@
 โดยการที่ไม่มีค่า Epsilon-Greedy Decay ที่จะทำให้หุ่นยนต์นั้นมีตาราง Q-Table ที่จะใช้เวลาในการทำให้ค่าสมบูรณ์นั้นนานมาก ผมจึงลองทำ Epsilon-Greedy Decay Algorithm ขึ้นมาให้มัน Explore เยอะๆในช่วงแรกแล้วค่อย Exploitation เมื่อตาราง Q-Table เริ่มดีแล้ว โดยวิธีนี้ได้ผลดีมาก และ สามารถทำงานได้อย่างรวดเร็ว นอกจากนี้ผมได้ใช้ 5 Action โดยที่เพิ่มมาคือ Close ไกล้อาหารโดยให้พุ่งไปหาอาหาร แล้วอีก Action คือ Back ให้สามารถเดินถอยหลังเมื่อชนกำแพงได้ ผลที่ได้ค่อนข้างดีโดยสามารถหลบสิ่งกีดขวางได้เองตอนช่วงหลัง
 
 <div align="center">
-  <img height="200" src="https://user-images.githubusercontent.com/38836072/163748063-1e56ac99-946c-4cc2-99d8-864bbaad4ebd.png">
+  <img height="300" src="https://user-images.githubusercontent.com/38836072/163748063-1e56ac99-946c-4cc2-99d8-864bbaad4ebd.png">
   
   กราฟแสดงการพัฒนาของหุ่นยนต์ 
 </div>
@@ -46,6 +48,7 @@ after state 50 try to change the position of the objective. I found out that thi
 
 <div align="center">
   <img height="400" src="https://user-images.githubusercontent.com/38836072/163748365-a2690424-ff60-4823-b064-70c8ba3f004b.png">
+  
   Learning Curve of GA Robot
 </div>
 
@@ -63,6 +66,7 @@ after state 50 try to change the position of the objective. I found out that thi
 
 <div align="center">
   <img height="400" src="https://user-images.githubusercontent.com/38836072/163748511-03e72749-b38e-4df4-a0e2-4dbdd27708e0.png">
+  
   กราฟการตายของ ALIFE Robot ที่ตายน้อยลง เพราะมีการเรียนรู้
 </div>
 
