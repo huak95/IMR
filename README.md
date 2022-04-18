@@ -75,4 +75,6 @@ after state 50 try to change the position of the objective. I found out that thi
 ## Contact
 Saksorn Ruangtanusak - [Linkedin](https://www.linkedin.com/in/saksorn/)
 
+Sivakorn Sansawas - [Linkedin](https://www.linkedin.com/in/sivakorn-ssw-tow/)
+
 Project Link: [https://github.com/huak95/IMR](https://github.com/huak95/IMR)
